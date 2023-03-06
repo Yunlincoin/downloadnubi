@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>雲林扭一下-雲林數位縣民平台</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Global site tag (gtag.js) - Google Ads: 494888555 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-494888555"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'AW-494888555');
+    </script>
+
+    <!-- detect device -->
+    <script>
+      const getMobileOS = () => {
+        const ua = navigator.userAgent;
+        if (/android/i.test(ua)) {
+          return 'Android';
+        } else if (
+          /iPad|iPhone|iPod/.test(ua) ||
+          (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+        ) {
+          return 'iOS';
+        }
+        return 'Other';
+      };
+
+      const os = getMobileOS();
+      if (os === 'iOS') {
+        window.location.href =
+          'https://apps.apple.com/tw/app/%E9%9B%B2%E6%9E%97nubi%E6%89%AD%E4%B8%80%E4%B8%8B/id1546439181';
+      } else if (os === 'Android') {
+        window.location.href = 'market://details?id=com.yulingov.yulincoin';
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="contain">
+      <div class="logo">
+        <img src="img/download/download_1.png" />
+      </div>
+      <div class="qrcode">
+        <div class="qr_box qr_left">
+          <div class="qr_img">
+            <img src="img/download/download_2.png" />
+          </div>
+          <div class="qr_btn">
+            <a
+              href="https://apps.apple.com/tw/app/%E9%9B%B2%E6%9E%97nubi%E6%89%AD%E4%B8%80%E4%B8%8B/id1546439181"
+              target="_blank"
+              ><img src="img/download/download_3.png"
+            /></a>
+          </div>
+          <br />
+          ↑ 點擊即可下載
+        </div>
+        <div class="qr_box qr_right">
+          <div class="qr_img">
+            <img src="img/download/and.png" />
+          </div>
+          <div class="qr_btn">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.yulingov.yulincoin"
+              target="_blank"
+              ><img src="img/download/download_4.png"
+            /></a>
+          </div>
+          <br />
+          ↑ 點擊即可下載
+        </div>
+      </div>
+      <div class="bottom">
+        <img src="img/download/download_5.png" />
+        <div class="words">
+          雲林縣數位縣民平台
+          <div class="fb">
+            <a
+              href=" https://www.facebook.com/%E9%9B%B2%E6%9E%97Nubi%E6%89%AD%E4%B8%80%E4%B8%8B-121953866377791/"
+              target="_blank"
+            >
+              <img src="img/download/download_6.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
